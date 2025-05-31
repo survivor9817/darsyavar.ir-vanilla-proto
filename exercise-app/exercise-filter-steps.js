@@ -5,12 +5,14 @@ const filtersContainer = document.querySelector(".exercise-filter-container");
 filtersContainer.children[0].firstElementChild.addEventListener("change", () => {
     if (filtersContainer.children[1].firstElementChild.value === "") {
         filtersContainer.style.height = "195px";
+        filtersContainer.children[1].firstElementChild.focus();
     };
 })
 
 filtersContainer.children[1].firstElementChild.addEventListener("change", () => {
     if (filtersContainer.children[2].firstElementChild.value === "") {
         filtersContainer.style.height = "280px";
+        filtersContainer.children[2].firstElementChild.focus();
     };
 })
 
