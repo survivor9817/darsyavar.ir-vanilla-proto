@@ -6,14 +6,14 @@ filtersContainer.children[0].firstElementChild.addEventListener("change", () => 
     if (filtersContainer.children[1].firstElementChild.value === "") {
         filtersContainer.style.height = "195px";
     };
-    filtersContainer.children[1].firstElementChild.focus();
+    filtersContainer.children[1].firstElementChild.focus({preventScroll: true});
 })
 
 filtersContainer.children[1].firstElementChild.addEventListener("change", () => {
     if (filtersContainer.children[2].firstElementChild.value === "") {
         filtersContainer.style.height = "280px";
     };
-    filtersContainer.children[2].firstElementChild.focus();
+    filtersContainer.children[2].firstElementChild.focus({preventScroll: true});
 })
 
 filtersContainer.children[2].firstElementChild.addEventListener("change", () => {
@@ -23,6 +23,7 @@ filtersContainer.children[2].firstElementChild.addEventListener("change", () => 
         startExerciseBtnContainer.style.opacity = "1";
         startExerciseBtnContainer.style.transform = "translateY(-27px)";
     };
+    filtersContainer.children[2].firstElementChild.blur();
 })
 
 const startExerciseBtn = document.querySelector("#StartExerciseBtn");
