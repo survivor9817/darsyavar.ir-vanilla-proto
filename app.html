@@ -22,6 +22,31 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     /> -->
+
+        <!-- temporary styles -->
+    <style defer>
+      /* in code baraaye bastane zoom do zarbe i dar chrome iphone va safari e */
+      button {
+          touch-action: manipulation;
+      }
+    @media screen and (max-width: 600px) {
+      .main-content {
+/*         flex-direction: column-reverse; */
+        flex-direction: column;
+      }
+
+      .active-tab-indicator {
+          top: unset;
+          bottom: 0;
+      }
+    }  
+
+    .fehrest-section{
+        /* overflow: hidden; */
+        scrollbar-width: none; /* Hide scrollbar in Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer 10+ */
+    }
+  </style>
   </head>
   <body>
     <!-- main page layout -->
