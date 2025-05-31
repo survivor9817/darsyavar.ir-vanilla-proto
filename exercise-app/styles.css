@@ -49,6 +49,7 @@
 /* class asli label ro tori michinim ke tooye select khaali gharaar begire */
 .filters-dropdown-list-label {
     font-size: 18px;
+    color: #1a73e8;
     padding-inline: 4px;
     padding-block: 4px;
     font-weight: bold;
@@ -58,7 +59,7 @@
     transform: translateY(-140%) translateX(-12px);
     display: inline-block;
     background-color: #ffffff;
-    transition: transform 0.3s ease, font-size 0.3s ease;
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 
     pointer-events: none;
 }
@@ -68,6 +69,7 @@
     font-size: 16px;
     /* transform: translateY(45%) translateX(-12px); */
     transform: translateY(-250%) translateX(-12px);
+    color: #000;
 }
 
 /* .filter-criteria:has(.filters-dropdown-list:focus) .filters-dropdown-list-label */
